@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Vehicle List";
+
+
+}
+@model List<VehicleDBO> 
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Manufacturer</th>
+            <th scope="col">Model</th>
+            <th scope="col">Product Year</th>
+            <th scope="col">Mileage</th>
+            <th scope="col">Car</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (VehicleDBO vehicle in Model)
+{
+        <tr>
+            <th scope="row">@vehicle.id</th>
+            <td>@vehicle.manufacturer</td>
+            <td>@vehicle.model</td>
+            <td>@vehicle.productYear</td>
+            <td>@if (vehicle.mileage == null)
+            {
+                @Html.Label("-");
+            }else
+            {
+                @Html.Label(vehicle.mileage);
+            }
+            </td>
+            <td>@vehicle.isCar</td>
+        </tr>
+
+        }
+        </tbody>
+</table>

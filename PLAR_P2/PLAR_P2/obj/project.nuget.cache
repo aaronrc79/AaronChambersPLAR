@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "dgSpecHash": "X2RFI7ana0x52LLvDCadOc9e0AvFkoeZ3QYpm2UjM4Ti4R/w6QFWD9tXaTkRFa0IfamMxFDfoNFSmKsq5wtOdw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aarsh\\Documents\\School\\Fall2020\\PLAR\\PLAR_P2\\PLAR_P2\\PLAR_P2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aarsh\\.nuget\\packages\\expressiveannotations\\2.9.6\\expressiveannotations.2.9.6.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\jquery\\1.8.2\\jquery.1.8.2.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\jquery.validation\\1.10.0\\jquery.validation.1.10.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\microsoft.jquery.unobtrusive.validation\\3.1.1\\microsoft.jquery.unobtrusive.validation.3.1.1.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\newtonsoft.json\\4.5.11\\newtonsoft.json.4.5.11.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\aarsh\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ExpressiveAnnotations 2.9.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "ExpressiveAnnotations",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json 4.5.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

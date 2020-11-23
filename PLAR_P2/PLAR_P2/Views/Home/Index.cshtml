@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model PLAR_P2.Models.CarBoatModel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <h1 class="display-4">Welcome, Enter your vehicle.</h1>
+    <div class="row">
+        <div class="col-md-3 offset-1">
+            <p>
+                <!-- Using Html helper method to create the label. -->
+                @Html.LabelFor(m => m.manufacturer, new { @class = "control-label" })
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.manufacturer, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.ValidationMessageFor(m => m.manufacturer, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3 offset-1">
+            <p>
+                <!-- Using Html helper method to create the label. -->
+                @Html.LabelFor(m => m.model, new { @class = "control-label" })
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.model, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.ValidationMessageFor(m => m.model, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3 offset-1">
+            <p>
+                <!-- Using Html helper method to create the label. -->
+                @Html.LabelFor(m => m.productYear, new { @class = "control-label" })
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.productYear, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.ValidationMessageFor(m => m.productYear, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3 offset-1">
+            <p>
+                <!-- Using Html helper method to create the label. -->
+                @Html.LabelFor(m => m.mileage, new { @class = "control-label" })
+            <p>
+
+                Leave blank to enter for a car
+            </p>
+
+            </p>
+            <p>
+                <!-- Using Html helper method to create the label. -->
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.mileage, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using Html helper method to create the textbox. -->
+                @Html.ValidationMessageFor(m => m.mileage, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+
+
+    <input type="submit" class="btn btn-primary btn-lg" name="Index" value="Add" />
+    @Html.ActionLink("Clear", "Index", "Home", new { @class = "btn btn-secondary" })
+
+
+}
